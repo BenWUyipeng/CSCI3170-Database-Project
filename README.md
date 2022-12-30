@@ -1,5 +1,4 @@
-CSCI3170 Project
-
+#CSCI3170 Database Project
 Group number: 17
 Name: WU Yipeng, Li King Pui
 
