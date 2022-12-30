@@ -1,6 +1,6 @@
 import java.sql.*;
 import java.io.*;
-        
+
 public class Sales {
 
     public static void printMenu() {
@@ -460,7 +460,6 @@ public class Sales {
         {
             System.out.println("| Manufacturer ID | Manufacturer Name | Total Sales Value |");
             stmt.executeUpdate("CREATE TEMPORARY TABLE temp_manufacturer SELECT * FROM Manufacturer");
-            //stmt.executeQuery("SELECT * INTO temp_manufacturer FROM Manufacturer");
             stmt.executeUpdate("ALTER TABLE temp_manufacturer ADD totalRevenue INT DEFAULT 0");
             Statement stmt2 = conn.createStatement();
             ResultSet rs = stmt.executeQuery("SELECT pID, mID, pPrice FROM Part");
