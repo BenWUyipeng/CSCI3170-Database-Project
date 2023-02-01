@@ -509,7 +509,6 @@ public class Sales {
         {
             System.out.println("| Part ID | Part Name | No. of Transaction |");
             stmt.executeUpdate("CREATE TEMPORARY TABLE temp_part SELECT * FROM Part");
-            //stmt.executeQuery("SELECT * INTO temp_part FROM Part");
             stmt.executeUpdate("ALTER TABLE temp_part ADD numOfTransaction INT DEFAULT 0");
             ResultSet rs = stmt.executeQuery("SELECT pID FROM Part");
             Statement stmt2 = conn.createStatement();
