@@ -1,4 +1,4 @@
-# CSCI3170 Database Project
+# Sales System
 Group number: 17
 Name: WU Yipeng, Li King Pui
 
